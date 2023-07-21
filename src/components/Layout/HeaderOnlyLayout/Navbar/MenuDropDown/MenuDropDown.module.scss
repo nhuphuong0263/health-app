@@ -1,0 +1,35 @@
+.menu-button {
+  margin-left: 32px;
+  position: relative;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .drawr-menu {
+    position: absolute;
+    height: 432px;
+    width: 280px;
+    background-color: #777;
+    z-index: 3;
+    top: 38px;
+    right: 0;
+
+    ul li {
+      list-style: none;
+      padding: 23px 0 23px 32px;
+      height: 72px;
+      border-bottom: 1px solid #b3acac8a;
+    }
+
+    ul li a {
+      color: var(--default);
+      text-decoration: none;
+
+      &:hover {
+        cursor: pointer;
+        color: var(--primary);
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.chart {
+  width: calc(100% - var(--banner-top-content-height));
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+}

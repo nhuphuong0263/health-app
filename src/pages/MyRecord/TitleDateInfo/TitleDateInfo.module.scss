@@ -1,0 +1,29 @@
+.wrapper {
+  width: 100%;
+  padding: 16px 24px 0;
+  background-color: var(--grey);
+  display: flex;
+  align-items: center;
+
+  .title {
+    text-transform: uppercase;
+    color: var((--default));
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.15px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line;
+    width: 96px;
+  }
+
+  .date {
+    color: var((--default));
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px; /* 122.727% */
+    letter-spacing: 0.11px;
+  }
+}

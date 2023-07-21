@@ -1,0 +1,15 @@
+.up-button {
+  position: fixed;
+  right: 160px;
+  top: calc(100vh - 60px);
+  height: 48px;
+
+  button {
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

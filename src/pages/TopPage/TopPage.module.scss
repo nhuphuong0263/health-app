@@ -1,0 +1,83 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  height: var(--banner-top-content-height);
+  width: 100%;
+  position: relative;
+
+  .banner {
+    width: 540px;
+    height: var(--banner-top-content-height);
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+
+      object-fit: cover;
+      object-position: left;
+    }
+  }
+
+  .chart {
+    width: calc(100vw - 540px);
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+  }
+}
+
+.meals {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .inner {
+    display: flex;
+    flex-direction: column;
+    width: var(--default-layout-width);
+  }
+
+  .options {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1 1;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 21px 0 25px;
+  }
+
+  .foods {
+    display: flex;
+    position: relative;
+
+    .wrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "~": "./src"
+        }
+      }
+    ]
+  ]
+}
+// .babelrc will auto config of webpack so we config the config-overrides.js file/

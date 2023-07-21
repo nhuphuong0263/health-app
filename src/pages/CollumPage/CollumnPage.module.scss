@@ -1,0 +1,41 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--default-layout-width);
+    margin: 0 auto;
+  }
+
+  .recommended {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 56px 0;
+  }
+
+  .foods {
+    display: flex;
+
+    .wrapper {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+  }
+}

@@ -1,70 +1,100 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
 ### `npm start`
 
+Change port at .env.local file to: PORT = 3002
 Runs the app in the development mode.\
+Open [http://localhost:3002](http://localhost:3002) to view it in your browser.
+
+### `npm install -g json-server`
+
+Setup json server to build api
+
+### `json-server --watch db.json`
+
+Run the api
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### `PROJECT SETUP`
 
-### `npm test`
+- Relative path with packages:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - customize-cra(overrides webpack dont need eject it).
+  - react-app-rewired
+  - babel-plugin-module-resolver
+  - Config at:
+    - config-overrides.js file.
+    - Edit script at package.json file.
+    - jsonfig.json & .babelrc files.
 
-### `npm run build`
+- Config pretties
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - extendsion vscode -> install pretties
+  - Config at:
+    - .prettierrc file
+    - .vscode/setttings.json
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Config Css/Scss
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  - Create Global component styles to wrapper App.
+  - Create GlobalStyles.scss to applied global style.
+  - npm install -D sass classnames to writte scss and modules style.
 
-### `npm run eject`
+- Config Router
+  - npm install react-router-dom.
+  - Move config router to outside.
+  - Build render layout.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### `PROJECT FOLDER`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- src
+  - apiServices
+  - assets
+    - fonts
+    - images
+  - components
+    - Buttons
+    - CircleProgressBar
+    - Food
+    - GlobalStyles
+    - Icons
+    - Layout
+  - config
+  - hooks
+    - useFetch.js
+  - pages
+    - topPage
+    - myRecord
+    - CollumnPage
+  - routes
+    - config navigate all pages
+  - utils
+    - constans.js
+    - httpsRequest.js
+    - utils.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### `Header`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Actived page.
+- Drawer Menu Icon toggle.
 
-## Learn More
+### `Footer`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `Top Page`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Food component
+- UpIconButton component: click to top page
+- LoadMoreButton component
+- CircleProgressBar component
 
-### Code Splitting
+### `My Record`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Click scroll section
+- Chart
+- Tabs selection actived
+- Exercise table custom scroll
+- UpIconButton component: click to top page
 
-### Analyzing the Bundle Size
+### `Collumn Page`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Food component
+- UpIconButton component: click to top page
+- LoadMoreButton component

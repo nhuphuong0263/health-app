@@ -1,0 +1,16 @@
+.wrapper {
+  height: var(--default-layout-header-height);
+  background: #414141;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner {
+  height: 100%;
+  width: var(--default-layout-width);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
