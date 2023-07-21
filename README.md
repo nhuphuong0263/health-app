@@ -13,6 +13,16 @@ Setup json server to build api
 Run the api
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+http://localhost:3000/foodsTopPage
+
+http://localhost:3000/foods
+
+http://localhost:3000/diaries
+
+http://localhost:3000/exercise
+
+http://localhost:3000/recommended
+
 ### `PROJECT SETUP`
 
 - Relative path with packages:
